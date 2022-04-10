@@ -24,7 +24,7 @@ body {
     color: var(---text-color);
 }
 
-header {
+.header {
     justify-content: center;
     padding: 45px;
     background-color: azure;
@@ -32,12 +32,24 @@ header {
     flex-direction: row;
 }
 
-header h1, a {
+.header h1 a {
     display: inline-flex;
     color: var(--header-color);
     font-size: 48px;
     text-decoration: none;
 }
+
+nav a {
+    justify-content: flex-end;
+    padding: 10px;
+    flex-wrap: wrap;
+    color: var(---text-color);
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* navbar end */
+
 
 body p {
     justify-content: center;
@@ -83,10 +95,12 @@ body p {
     background-size: cover;
 }
 
+
 .container-2 {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    margin-bottom: 25px;
     background-color: var(--secondary-color);
     margin-left: 50px;
     margin-right: 50px;
@@ -95,6 +109,45 @@ body p {
 
 .container-2 p, a {
     color:rgba(248, 153, 169, 0.826);
+    justify-content: center;
+
+}
+
+.container-2 h2 {
+    padding: 20px;
+}
+
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    background-color: var(--secondary-color);
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+.container-3 p, a {
+    color:rgba(248, 153, 169, 0.826);
+    justify-content: center;
+
+}
+
+.container-3 p {
+    font-size: 40px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    text-shadow: 0 0 10px grey;
+    font-weight: 700;
+    color: azure;
+    text-align: center;
+
+}
+.container-3 p span {
+    border: 10px solid rgba(181, 216, 216, 0.868);
+    padding: 6px 14px;
+    display:inline-block;
     justify-content: center;
 
 }

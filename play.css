@@ -1,11 +1,12 @@
 .choice-container {
   display: flex;
-  margin-bottom: 0.5rem;
+  margin-bottom: 15pxpx;
   width: 100%;
   font-size: 1.8rem;
   border: 0.1rem solid rgb(86, 165, 235, 0.25);
   background-color: white;
 }
+
 
 .choice-container:hover {
   cursor: pointer;
@@ -16,7 +17,7 @@
 
 .choice-prefix {
   padding: 1.5rem 2.5rem;
-  background-color: rgba(248, 153, 169, 0.826);
+  background-color: rgb(181, 245, 245);
   color: white;
 }
 
@@ -47,6 +48,7 @@
 
 .hud-main-text {
   text-align: center;
+  padding: 20px;
 }
 
 #progressBar {
