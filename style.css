@@ -181,7 +181,6 @@ body p {
     transform: none;
   }
 
-
 /* footer style */
 footer {
     background-color: azure;
@@ -208,4 +207,17 @@ footer a {
         font-size: 16px;
 
     }
+
+    /*****Breakpoints*****/
+@media only screen and (min-width: 992px) {
+    main {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    main {
+      width: 40%;
+    }
+  }
 
