@@ -17,7 +17,6 @@
 
 /* universal styling end */
 
-
 /* header style */
 
 body {
@@ -33,10 +32,11 @@ header {
     flex-direction: row;
 }
 
-header h1 {
+header h1, a {
     display: inline-flex;
     color: var(--header-color);
     font-size: 48px;
+    text-decoration: none;
 }
 
 body p {
@@ -93,8 +93,9 @@ body p {
 }
 
 
-.container-2 p{
+.container-2 p, a {
     color:rgba(248, 153, 169, 0.826);
+    justify-content: center;
 
 }
 
