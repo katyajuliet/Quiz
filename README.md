@@ -20,4 +20,4 @@ katyajuliet.github.io/quiz/
 https://github.com/katyajuliet/Quiz
 
 #### Screenshot of Web API
-<img src="./images/homepage.png" alt="screenshot of homepage">
+<img src="./images/screenshot.png" alt="screenshot of homepage">

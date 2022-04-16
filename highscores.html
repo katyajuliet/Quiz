@@ -3,80 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katya's Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Katya J Module-4 Crystal Quiz -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This is the style links -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- This is the title-->
+    <title>Crystal Quiz High Scores</title>
+
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div class="header header-h1-a">
-            <h1><a href="./index.html"> Crystal Quiz </a></h1>
+     <!--header-->
+  <header>
+    <div class="header header-h1-a">
+      <h1><a href="./index.html"> Crystal Quiz </a></h1>
+    </div>
+
+
+    <nav>
+      <div class="row">
+
+        <a href="./index.html">
+          Try Again
+        </a>
+      </div>
+    </nav>
+
+  </header>
+
+    <!-- This is a wrapper -->
+    <div class="row">
+        <!-- Div for timer -->
+        <div id="currentTime"></div>
+        <!-- Div for quiz content -->
+        <div class="container" id="questionsDiv">
+            <h1>High Scores</h1>
         </div>
-        
-
-        <nav>
-            <div class="row">
-            
-                    <a href="./index.html">
-                        Home
-                    </a>
-                
-                    <a href="./play.html">
-                        Start Quiz
-                    </a>
-
-                </div>
-        </nav>
-
-    </header>
-
-    <!-- main banner image-->
-    <section>
-        <div class="container-hero">
-
-            <!-- middle main content -->
-    <main>
-        <h1>High Scores</h1>
-        <table id="highscores-table">
-          <tr>
-            <th>Rank</th>
-            <th>Score</th>
-            <th>Initials</th>
-          </tr>
-        </table>
-        <div id="highscore-buttons">
-          <a href="index.html" class="back-button"><i class="fas fa-angle-left" aria-hidden="true"></i>Go back</a>
-          <button id="clear-highscores">Clear highscores</button>
+        <div class="row">
+            <ul id="highScore"></ul>
         </div>
-      </main>
-            
+            <!-- Buttons -->
+            <div class="container">
+            <button class="btn" id="clear" value="reset">Clear High Scores</button>
         </div>
-    </section>
-
-   
-
- 
-
-    <!-- Footer Start -->
-    <footer class="footer">
-        <h3>Quiz created by Katya Juliet</h3>
-        <a href="mailto:katyajuliet22@gmail.com" target="_blank"><strong>Email</strong></a>
-        <br>
-        <a href="tel:831456786"" target=" _blank"><strong> Call or Text (831) 345-6786)</strong></a>
-        <p>
-            &copy;2022 Made with <span class="heart">♥</span> by Katya Juliet Lerner. All Rights Reserved.
-        </p>
-    </footer>
-
-
-
-
-
-    <script src="play.js"></script>
-<script src="highscore.js"></script>
+        </div>
+    </div>
+    <script src="HighScores.js"></script>
 </body>
 
 </html>

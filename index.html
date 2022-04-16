@@ -2,75 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katya's Quiz</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katya's Quiz</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!--header-->
-    <header>
-        <div class="header header-h1-a">
-            <h1><a href="./index.html"> Crystal Quiz </a></h1>
+  <!--header-->
+  <header>
+    <div class="header header-h1-a">
+      <h1><a href="./index.html"> Crystal Quiz </a></h1>
+    </div>
+
+
+    <nav>
+      <div class="row">
+
+        <a href="./index.html">
+          Home
+        </a>
+        <a href="./highscores.html">
+          High Scores
+        </a>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- hero banner-->
+  <section>
+    <div class="container-hero">
+      <div class="container-3">
+        <p><span>
+            Can you match these crystal with their healing properties?
+          </span>
+        </p>
+      </div>
+      </section>
+
+    
+      <div class="container-2">
+
+        <h2>This is a timed quiz. Answer the questions correctly before the time runs out. Good luck!</h2>
+      </div>
+
+      <div class="container-2">
+        <!-- button start quiz-->
+       <button class="btn" id="startTime">Start Quiz</button>
+         <!-- Div for timer -->
+        <div id="currentTime"></div>
+  </div>
+      <!-- Div for quiz content -->
+  
+<div class="container">
+        <div id="questionsDiv">
         </div>
-        
+      <div class="container">
+        <ul id="choicesUl"></ul>
 
-        <nav>
-            <div class="row">
-            
-                    <a href="./highscores.html">
-                        High Scores
-                    </a>
-                
-                    <a href="./play.html">
-                        Start Quiz
-                    </a>
-
-                </div>
-        </nav>
-
-    </header>
-
-    <!-- main banner image-->
-    <section>
-        <div class="container-hero">
-            <div class="container">
-                <p><span>
-                        Can you match these crystal with their healing properties?</span>
-                </p>
-            </div>
-            <!-- sub title and play buttons-->
-            <div class="container-2">
-                <a id="startBtn" href="./play.html" class="btn justify-center"> Take the Quiz!</a>
-            </div>
-            <div class="container-2">
-                <a href="./highscores.html" class="btn justify-center"> High Scores</a>
-            </div>
+</div>
 
 
-        </div>
-    </section>
+      </div>
+    </div>
+
+    </div>
+
+    </div>
 
 
+
+
+
+
+
+
+    <!-- sub title and play buttons-->
     <!-- Footer Start -->
     <footer class="footer">
-        <h3>Quiz created by Katya Juliet</h3>
-        <a href="mailto:katyajuliet22@gmail.com" target="_blank"><strong>Email</strong></a>
-        <br>
-        <a href="tel:831456786"" target=" _blank"><strong> Call or Text (831) 345-6786)</strong></a>
-        <p>
-            &copy;2022 Made with <span class="heart">♥</span> by Katya Juliet Lerner. All Rights Reserved.
-        </p>
+      <h3>Quiz created by Katya Juliet</h3>
+      <a href="mailto:katyajuliet22@gmail.com" target="_blank"><strong>Email</strong></a>
+      <br>
+      <a href="tel:831456786"" target=" _blank"><strong> Call or Text (831) 345-6786)</strong></a>
+      <p>
+        &copy;2022 Made with <span class="heart">♥</span> by Katya Juliet Lerner. All Rights Reserved.
+      </p>
     </footer>
 
 
 
 
 
-    <script src="play.js"></script>
+    <script src="questions.js"></script>
+
 </body>
 
 </html>

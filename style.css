@@ -17,12 +17,17 @@
 
 /* universal styling end */
 
-/* header style */
+row {
+    justify-content: center;
+    text-align: center;
+}
+
 
 body {
     background-color: var(--background-color);
     color: var(---text-color);
 }
+/* header style */
 
 .header {
     justify-content: center;
@@ -40,7 +45,7 @@ body {
 }
 
 nav a {
-    justify-content: flex-end;
+    display: flex-end;
     padding: 10px;
     flex-wrap: wrap;
     color: var(---text-color);
@@ -49,22 +54,35 @@ nav a {
 }
 
 /* navbar end */
-
-
-body p {
-    justify-content: center;
+row {
     padding: 20px;
-    font-size: 30px;
-}
-
-/* body style */
-.container {
-    display: flex;
     justify-content: center;
     margin-top: 90px;
     background-color: var(--secondary-color);
     margin-left: 90px;
     margin-right: 90px;
+ }
+
+body p {
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    color: var(---text-color);
+    
+}
+
+/* body style */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 15px;
+
 }
 
 
@@ -74,7 +92,7 @@ body p {
     margin: 0;
     text-shadow: 0 0 10px grey;
     font-weight: 700;
-    color: azure;
+    color: pink;
     text-align: center;
 
 }
@@ -89,10 +107,10 @@ body p {
 
 .container-hero {
     position: relative;
-    height: 500px;
+    height: 250px;
     overflow: hidden;
-    background: url(./images/crystals3.webp) no-repeat center;
-    background-size: cover;
+    background: rgb(154, 250, 240);
+    
 }
 
 
@@ -102,13 +120,13 @@ body p {
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: var(--secondary-color);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 
 .container-2 p, a {
-    color:rgba(248, 153, 169, 0.826);
+    color: var(---text-color);
     justify-content: center;
 
 }
@@ -117,12 +135,19 @@ body p {
     padding: 20px;
 }
 
+.container-2 ul {
+    padding: 25px;
+    font-size: 22px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 
 .container-3 {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
-    background-color: var(--secondary-color);
+    margin-top: 50px;
+    background-color: var(---text-color);
     margin-left: 90px;
     margin-right: 90px;
 }
@@ -135,7 +160,7 @@ body p {
 }
 
 .container-3 p {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 0.2em;
     margin: 0;
     text-shadow: 0 0 10px grey;
@@ -156,16 +181,50 @@ body p {
     display: none;
   }
 
+  .createLi {
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    color:black;
+  }
+ .questionsList {
+   color: var(--text-color);
+   font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+ }
+
+  #questionsDiv {
+  
+    display: row;
+   align-items: center;
+    padding: 20px;
+    font-size: 26px;
+    color: var(---text-color);
+  }
+
+  #currentTime {
+    justify-content: center;
+    padding: 7px;
+    font-size: 40px;
+  }
+
+
+
+
+
+
 /* button style */
 .btn {
     font-size: 1.8rem;
-    padding: 1rem 0;
+    padding: 10px;
     width: 20rem;
     text-align: center;
     border: 0.1rem solid azure;
-    margin-bottom: 1rem;
+    margin: 15px;
     text-decoration: none;
     background-color: white;
+    justify-content: center;
   }
   
   .btn:hover {
@@ -208,6 +267,28 @@ footer a {
 
     }
 
+    /*end footer*/
+
+  
+    
+   
+      .correct {
+        background-color: #a5fcb9;
+        color: black;
+        font-size: 26px;
+        text-align: center;
+        border: var(---text-color) dotted 3px;
+      }
+      
+      .incorrect {
+        background-color: #f87380;
+        color: black;
+        font-size: 26px;
+        text-align: center;
+        border: var(---text-color) dotted 3px;
+      }
+
+      
     /*****Breakpoints*****/
 @media only screen and (min-width: 992px) {
     main {
